@@ -38,6 +38,7 @@
 ```bash
 git clone https://github.com/rkdqudwh21/my-chatbot.git
 cd my-chatbot
+```
 가상환경 생성 및 활성화 (Windows)
 python -m venv .venv
 .venv\Scripts\activate
