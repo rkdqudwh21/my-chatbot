@@ -39,19 +39,39 @@
 git clone https://github.com/rkdqudwh21/my-chatbot.git
 cd my-chatbot
 ```
-가상환경 생성 및 활성화 (Windows)
+
+### 가상환경 생성 및 활성화 (Windows)
+```bash
 python -m venv .venv
 .venv\Scripts\activate
-필요한 패키지 설치
+```
+
+### 필요한 패키지 설치
+```bash
 pip install -r requirements.txt
-🔑 API 키 설정
+```
 
-.streamlit/secrets.toml 파일을 생성한 후 아래 내용을 추가합니다.
+---
 
+## 🔑 API 키 설정
+
+`.streamlit/secrets.toml` 파일을 생성한 후 아래 내용을 추가합니다.
+
+```toml
 OPENAI_API_KEY = "여기에_API_KEY_입력"
-▶️ 실행 방법
+```
+
+---
+
+## ▶️ 실행 방법
+```bash
 streamlit run app.py
-📂 프로젝트 구조
+```
+
+---
+
+## 📂 프로젝트 구조
+```text
 app/
  └─ pages/
     ├─ index_page.py
@@ -60,16 +80,24 @@ app/
 app.py
 requirements.txt
 README.md
-⚡ 동작 흐름
+```
 
+---
+
+## ⚡ 동작 흐름
 사용자 입력 → 감정 키워드 분류 → 감정별 프롬프트 적용 → AI 응답 생성
 
-💡 예시 질문
-오늘 너무 스트레스 받아
-기분이 좀 우울해
-너무 피곤해서 아무것도 하기 싫어
-오늘 기분 좋은데 뭐 먹지?
-🎯 구현 포인트
-감정 상태에 따라 음식 추천 기준을 다르게 설정
-특정 음식 유형에 치우치지 않도록 다양성 확보
-사용자 선택을 돕기 위해 추천 개수를 제한 (2~3개)
+---
+
+## 💡 예시 질문
+- 오늘 너무 스트레스 받아
+- 기분이 좀 우울해
+- 너무 피곤해서 아무것도 하기 싫어
+- 오늘 기분 좋은데 뭐 먹지?
+
+---
+
+## 🎯 구현 포인트
+- 감정 상태에 따라 음식 추천 기준을 다르게 설정
+- 특정 음식 유형에 치우치지 않도록 다양성 확보
+- 사용자 선택을 돕기 위해 추천 개수를 제한 (2~3개)
