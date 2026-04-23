@@ -39,8 +39,8 @@
 
 ### 1. 프로젝트 클론
 ```bash
-git clone <여기에_깃허브_주소>
-cd <프로젝트_폴더명>
+git clone https://github.com/rkdqudwh21/my-chatbot.git
+cd my-chatbot
 
 ### 2. 가상환경 생성 및 활성화 (Windows)
 python -m venv .venv
